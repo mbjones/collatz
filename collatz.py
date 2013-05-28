@@ -14,18 +14,14 @@ import sys
 # Calculate and display a collatz hailstone sequence
 def collatz(n):
     order = 0
-    letterord = order + 65
-    letter = chr(letterord)
     while n > 1:
-        print n, '(', letter, ')\n',
+        print n
         if n % 2:
             n = 3*n + 1
         else:
             n = n / 2
         order = order + 1
-        letterord = order + 65
-        letter = chr(letterord)
-    print n, '(', letter, ')'
+    print n
     print 'Order: ', order
     return order
 
