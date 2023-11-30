@@ -15,15 +15,15 @@ import sys
 def collatz(n):
     order = 0
     while n > 1:
-        print n
+        print(n)
         if n % 2:
             n = 3*n + 1
         else:
             n = n / 2
         order = order + 1
-    print n
-    print 'Order: ', order
-    return order
+    print(n)
+    print('Order: ', order)
+    return(order)
 
 # The main method just calls the collatz function with an input number or
 # range of inputs, depending on if it is called with one parameter or two
@@ -40,5 +40,5 @@ else:
     maxorder = collatz(m)
     sequence = m
 
-print "Highest order: n =", sequence, "took", maxorder, "steps."
+print("Highest order: n =", sequence, "took", maxorder, "steps.")
 
